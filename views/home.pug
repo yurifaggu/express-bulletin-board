@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 #{title}
+  ul.list-group
+    each ad in ads
+      li.list-group-item
+        a(href="/ads/" + ad.id)= ad.title           
